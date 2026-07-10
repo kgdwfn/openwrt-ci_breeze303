@@ -20,6 +20,8 @@ env:
 jobs:
   Build:
     runs-on: ubuntu-22.04
+    permissions:
+      contents: write  # 关键：授予创建 Release 和上传附件的权限
 
     steps:
     - name: Check Server Performance(检查服务器性能)
